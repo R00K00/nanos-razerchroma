@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Razer Chroma SDK</title>
+    <script src="ChromaSDKImpl.js"></script>
+    <script type="text/javascript">
+        var chromaSDK = new ChromaSDK();
+
+        function sleep(ms) {
+            var currentTime = new Date().getTime();
+            while (currentTime + ms >= new Date().getTime()) {
+            }
+        }
+    </script>
+    <script src="functions.js"></script>
+</head>
+<body onload="chromaSDK.init()" onunload="chromaSDK.uninit()">
+    Razer Chroma SDK - Nanos World
+</body>
+</html>
